@@ -223,8 +223,6 @@ gap:30px;
 grid-template-columns:1fr;
 }
 
-/* MOBILE MENU */
-
 nav{
 display:none;
 width:100%;
@@ -376,11 +374,11 @@ Beweis stellen.
 </div>
 
 <div class="card">
-<form>
-<input type="text" placeholder="Ihr Name">
-<input type="email" placeholder="Ihre E-Mail">
-<textarea rows="5" placeholder="Ihre Nachricht"></textarea>
-<button class="send-btn">Nachricht senden</button>
+<form action="https://formspree.io/f/xjgeznlg" method="POST">
+<input type="text" name="name" placeholder="Ihr Name" required>
+<input type="email" name="email" placeholder="Ihre E-Mail" required>
+<textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+<button type="submit" class="send-btn">Nachricht senden</button>
 </form>
 </div>
 
