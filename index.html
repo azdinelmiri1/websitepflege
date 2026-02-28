@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Azeddine El Miri</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+
+html{scroll-behavior:smooth}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f1f5f9;
+color:#334155;
+}
+
+/* HEADER */
+
+header{
+background:#e2e8f0;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#475569;
+}
+
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#475569;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:85vh;
+background:linear-gradient(rgba(15,23,42,.6),rgba(15,23,42,.6)),url("profile.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{font-size:52px}
+.hero h2{color:#7dd3fc;margin:12px 0}
+
+.btn{
+padding:14px 28px;
+border:none;
+border-radius:10px;
+margin:6px;
+font-weight:600;
+cursor:pointer;
+}
+
+.primary{background:#38bdf8;color:white}
+.outline{border:2px solid white;background:transparent;color:white}
+
+/* SECTIONS */
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+}
+
+.title{text-align:center;margin-bottom:30px}
+
+/* CARDS */
+
+.card,
+.qual-card,
+.strategy-card,
+.audio-card{
+background:linear-gradient(135deg,#ffffff,#f8fafc);
+padding:30px;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+margin-bottom:20px;
+border-left:6px solid #38bdf8;
+font-family:'Poppins',sans-serif;
+line-height:1.7;
+}
+
+/* AUDIO */
+
+.audio-card audio{
+width:100%;
+max-width:600px;
+margin-bottom:20px;
+}
+
+/* DOCUMENTS */
+
+.doc{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:12px 0;
+padding:18px;
+background:#f8fafc;
+border-radius:12px;
+}
+
+.download-btn{
+background:#38bdf8;
+color:white;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.download-btn:hover{
+background:#0ea5e9;
+}
+
+/* CONTACT */
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.contact-box{
+display:flex;
+align-items:center;
+margin-bottom:20px;
+}
+
+.icon{
+width:50px;height:50px;
+background:#cbd5f5;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-right:15px;
+}
+
+form input, form textarea{
+width:100%;
+padding:14px;
+border-radius:8px;
+border:1px solid #cbd5e1;
+margin-bottom:15px;
+}
+
+.send-btn{
+background:#94a3b8;
+color:white;
+padding:14px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+width:100%;
+}
+
+/* FOOTER */
+
+footer{
+background:#64748b;
+color:white;
+padding:60px 40px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:30px;
+}
+
+.copy{text-align:center;margin-top:30px;opacity:.8}
+
+@media(max-width:768px){
+.contact{grid-template-columns:1fr}
+.hero h1{font-size:36px}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Azeddine El Miri</div>
+<nav>
+<a href="#">Startseite</a>
+<a href="#about">Über mich</a>
+<a href="#experience">Berufserfahrung</a>
+<a href="#qual">Qualifikationen</a>
+<a href="#strategie">Bewerbungsstrategie</a>
+<a href="#audio">Audio</a>
+<a href="#docs">Dokumente</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+</header>
+
+<section class="hero" data-aos="zoom-in">
+<div>
+<h1>AZEDDINE EL MIRI</h1>
+<h2>Angehender Pflegefachmann</h2>
+
+<a href="Lebenslauf.pdf" download>
+<button class="btn primary">Lebenslauf herunterladen</button>
+</a>
+
+<a href="https://wa.me/212721867489">
+<button class="btn outline">WhatsApp</button>
+</a>
+
+<a href="mailto:azeddine@elmiri-pflege.de">
+<button class="btn outline">E-Mail</button>
+</a>
+
+</div>
+</section>
+
+<div class="section" id="about" data-aos="fade-up">
+<div class="title"><h2>Über mich</h2></div>
+<div class="card">
+Ich bin ein motivierter angehender Pflegefachmann mit praktischer Erfahrung im sozialen
+und gesundheitlichen Bereich. Mein Ziel ist es, eine Ausbildung im Pflegebereich in Deutschland
+zu absolvieren und langfristig einen wertvollen Beitrag im Gesundheitswesen zu leisten.
+</div>
+</div>
+
+<div class="section" id="experience" data-aos="fade-up">
+<div class="title"><h2>Berufserfahrung</h2></div>
+<div class="card">
+Erfahrungen in der Unterstützung älterer Menschen im Alltag, Hilfe bei der Körperpflege
+sowie soziale Betreuung.
+</div>
+</div>
+
+<div class="section" id="qual" data-aos="fade-up">
+<div class="title"><h2>Qualifikationen</h2></div>
+<div class="qual-card">
+<h3>Deutsch B2 (Telc)</h3>
+<p>Fähigkeit zur sicheren Kommunikation im beruflichen Kontext.</p>
+<h3>Altenpflege Ausbildung</h3>
+<p>Kenntnisse über Pflegeprozesse und Unterstützung im Alltag.</p>
+<h3>Erste Hilfe</h3>
+<p>Grundlagen der Notfallversorgung und lebensrettende Maßnahmen.</p>
+</div>
+</div>
+
+<div class="section" id="strategie" data-aos="fade-up">
+<div class="title"><h2>Bewerbungsstrategie</h2></div>
+<div class="strategy-card">
+<p>
+Diese Website stellt meine digitale Bewerbung dar und ermöglicht Arbeitgebern einen
+transparenten Überblick über meine Motivation und Qualifikationen.
+</p>
+</div>
+</div>
+
+<div class="section" id="audio" data-aos="fade-up">
+<div class="title"><h2>Audio-Vorstellung</h2></div>
+<div class="audio-card">
+
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<p>
+Guten Tag. Mit der Inanspruchnahme dieser digitalen Plattform möchte ich Ihnen nicht nur
+meine fachlichen Qualifikationen als angehender Pflegefachmann präsentieren, sondern auch
+meine strebende Absicht zur kontinuierlichen Verbesserung meiner Deutschkenntnisse unter
+Beweis stellen.
+</p>
+
+</div>
+</div>
+
+<div class="section" id="docs" data-aos="fade-up">
+<div class="title"><h2>Dokumente & Downloads</h2></div>
+
+<div class="card">
+
+<div class="doc"><span>Lebenslauf</span><a href="Lebenslauf.pdf" download class="download-btn">Download</a></div>
+<div class="doc"><span>Anschreiben</span><a href="Anschreiben.pdf" download class="download-btn">Download</a></div>
+<div class="doc"><span>Telc B2 Zertifikat</span><a href="Telc-B2.pdf" download class="download-btn">Download</a></div>
+<div class="doc"><span>Erste Hilfe Zertifikat</span><a href="Erste-Hilfe.pdf" download class="download-btn">Download</a></div>
+<div class="doc"><span>Altenpflege Ausbildung</span><a href="Altenpflege.pdf" download class="download-btn">Download</a></div>
+<div class="doc"><span>Praktikum Bescheinigung</span><a href="Praktikum.pdf" download class="download-btn">Download</a></div>
+<div class="doc"><span>Ehrenamt Bescheinigung</span><a href="Ehrenamt.pdf" download class="download-btn">Download</a></div>
+<div class="doc"><span>Abitur Zeugnis</span><a href="Abitur.pdf" download class="download-btn">Download</a></div>
+
+</div>
+</div>
+
+<div class="section" id="kontakt" data-aos="fade-up">
+<div class="title"><h2>Kontaktieren Sie mich</h2></div>
+
+<div class="contact">
+
+<div>
+<div class="contact-box"><div class="icon">✉</div>azeddine@elmiri-pflege.de</div>
+<div class="contact-box"><div class="icon">☎</div>+212 721867489</div>
+<div class="contact-box"><div class="icon">📍</div>Fes, Marokko</div>
+</div>
+
+<div class="card">
+<form>
+<input type="text" placeholder="Ihr Name">
+<input type="email" placeholder="Ihre E-Mail">
+<textarea rows="5" placeholder="Ihre Nachricht"></textarea>
+<button class="send-btn">Nachricht senden</button>
+</form>
+</div>
+
+</div>
+</div>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Azeddine El Miri</h3>
+<p>Zukünftiger Pflegefachmann</p>
+</div>
+
+<div>
+<h3>Kontakt</h3>
+azeddine@elmiri-pflege.de<br>
++212 721867489
+</div>
+
+</div>
+
+<div class="copy">
+© 2026 Azeddine El Miri
+</div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
+
+</body>
+</html>
