@@ -7,7 +7,6 @@
 <title>Azeddine El Miri</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <style>
@@ -35,6 +34,9 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .logo{
@@ -43,11 +45,25 @@ font-weight:700;
 color:#475569;
 }
 
+/* MENU */
+
+nav{
+display:flex;
+}
+
 nav a{
 margin:0 12px;
 text-decoration:none;
 color:#475569;
 font-weight:500;
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
 }
 
 /* HERO */
@@ -197,9 +213,37 @@ gap:30px;
 
 .copy{text-align:center;margin-top:30px;opacity:.8}
 
+/* MOBILE */
+
 @media(max-width:768px){
-.contact{grid-template-columns:1fr}
-.hero h1{font-size:36px}
+
+.hero h1{font-size:34px}
+
+.contact{
+grid-template-columns:1fr;
+}
+
+/* MOBILE MENU */
+
+nav{
+display:none;
+width:100%;
+flex-direction:column;
+margin-top:15px;
+}
+
+nav.active{
+display:flex;
+}
+
+nav a{
+margin:10px 0;
+}
+
+.menu-toggle{
+display:block;
+}
+
 }
 
 </style>
@@ -208,8 +252,12 @@ gap:30px;
 <body>
 
 <header>
+
 <div class="logo">Azeddine El Miri</div>
-<nav>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="menu">
 <a href="#">Startseite</a>
 <a href="#about">Über mich</a>
 <a href="#experience">Berufserfahrung</a>
@@ -219,6 +267,7 @@ gap:30px;
 <a href="#docs">Dokumente</a>
 <a href="#kontakt">Kontakt</a>
 </nav>
+
 </header>
 
 <section class="hero" data-aos="zoom-in">
@@ -368,6 +417,10 @@ AOS.init({
 duration:1000,
 once:true
 });
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
 </script>
 
 </body>
